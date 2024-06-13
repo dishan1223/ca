@@ -4,8 +4,9 @@
 # instructions to uninstall
 # 1. chmod +x uninstall.sh
 # 2. ./uninstall.sh
+# uninstall.sh - Uninstalls the ca program
 
+echo "Uninstalling the program..."
+sudo make uninstall
 
-# remove the script from bin file 
-# that will technically uninstall the program from you system
-sudo rm /usr/local/bin/ca
+echo "Uninstallation complete."
