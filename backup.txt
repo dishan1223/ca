@@ -8,25 +8,21 @@
 
 char *help() {
     std::string helpText;
-    
-    helpText += "\nUsage:\n";
-    helpText += "  ca -p {chars_separated_with_underscores}  # Print the given characters with underscores\n";
-    helpText += "  ca sf filePath                            # Show the contents of a file\n";
-    helpText += "  ca sf-l                                   # Show file contents with line numbers\n";
-    helpText += "  ca cp SourceFile DistFile                 # Copy SourceFile to DistFile\n";
-    helpText += "  ca finfo FileName                         # Get information about a specific file\n";
-    helpText += "  ca lines FileName                         # Display the number of lines in a file\n";
-    helpText += "  ca c FILENAME                             # Create a blank file\n";
-    helpText += "\nSystem Commands:\n";
-    helpText += "  ca -p 'text'                              # Print 'text' (with underscores)\n";
-    helpText += "  ca -sysinfo                               # Display system information\n";
-    helpText += "  ca -sysS                                  # Show storage capacity\n";
-    helpText += "  ca -time                                  # Display current system time\n";
-    helpText += "  ca -del FileName                          # Delete a specified file\n";
+    helpText += "\nUsage: ca -p {chars_separated_with_underscores}\n";
+    helpText += "       ca sf filePath [here sf = show file]\n";
+    helpText += "       ca sf-l [to show file with number lines]\n";
+    helpText += "       ca cp SourceFile DistFile\n";
+    helpText += "       ca finfo FileName [to get info about a specific file]\n";
+    helpText += "       ca lines FileName\n";
+    helpText += "       ca c FILENAME [to create a blank file]\n";
+    helpText += "\nSystem: ca -p 'text'\n";
+    helpText += "        ca -sysinfo\n";
+    helpText += "        ca -sysS [to show storage capacity]\n";
+    helpText += "        ca -time\n";
+    helpText += "        ca -del FileName\n";
 
     return strdup(helpText.c_str());
 }
-
 
 // Function to create a blank file
 void c(const std::string& filename) {
