@@ -9,4 +9,7 @@
 echo "Uninstalling the program..."
 sudo make uninstall
 
+echo "Cleaning up..."
+make clean
+
 echo "Uninstallation complete."
