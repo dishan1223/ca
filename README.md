@@ -38,7 +38,7 @@ Follow these simple steps to install and start using **CA**:
 
 1. Clone the repository:  
    ```bash
-   git clone <repository_url>
+   git clone https://github.com/dishan1223/ca.git
 2. Navigate to the repository folder:
    ```bash
    cd ca
