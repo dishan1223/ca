@@ -1,53 +1,41 @@
-# ca
-CA is a Linux command line utility offering file manipulation, system info retrieval, and text processing. Simplify tasks like file copying and viewing, enhancing your command line experience.
+# CA: Command Line Utility 🚀  
 
-Introducing 'ca' - the CLI command that bravely admits it's not the most efficient or fast alternative to 'cat'! Say goodbye to sluggish file viewing and hello to... well, slightly less sluggish file viewing. With ca, you'll experience a refreshing honesty about its performance!
+CA is a versatile Linux command line utility designed to streamline file manipulation, system information retrieval, and text processing tasks. While it humbly admits it might not be the fastest or most efficient, it delivers reliability and ease of use, enhancing your command line experience.  
 
-# CA Usage Guide
+---
 
-## Introduction
-CA is a versatile command line utility designed to simplify common tasks in Linux environments. From file manipulation to system information retrieval, CA offers a range of functionalities to enhance your command line experience.
+## 🌟 Features  
 
-## Usage
+### File Operations  
+- **View File Content**:  
+  - `ca sf <filePath>` → Display file contents.  
+  - `ca sf-l <filePath>` → Display file contents with line numbers.  
+- **Copy Files**:  
+  - `ca cp <SourceFile> <DestinationFile>` → Copy files.  
+- **File Information**:  
+  - `ca finfo <FileName>` → Retrieve details of a specific file.  
+- **Count Lines**:  
+  - `ca lines <FileName>` → Count the number of lines in a file.  
+- **Create Files**:  
+  - `ca c <FileName>` → Create an empty file.  
+- **Delete Files**:  
+  - `ca -del <FileName>` → Delete a specified file.  
 
-- ca -p {chars_separated_with_underscores}
-- ca sf filePath [here sf = show file]
-- ca sf-l [to show file with number lines]
-- ca cp SourceFile DistFile
-- ca finfo FileName [to get info about a specific file]
-- ca lines FileName
+### System Utilities  
+- **Print Custom Text**:  
+  - `ca -p <text_separated_by_underscores>` → Print formatted text.  
+- **System Information**:  
+  - `ca -sysinfo` → Display system details.  
+  - `ca -sysS` → Check storage capacity.  
+- **Date and Time**:  
+  - `ca -time` → Show the current date and time.  
 
-System:
-- ca -p 'text'
-- ca -sysinfo
-- ca -sysS [to show storage capacity]
-- ca -time
-- ca -del FileName
+---
 
+## ⚙️ Installation  
 
-## Options
-- `-p`: Print characters separated with underscores.
-- `sf`: Show the contents of a specified file.
-- 'c': Create a blank file
-- `sf-l`: Show the contents of a file with line numbers.
-- `cp`: Copy a source file to a destination file.
-- `finfo`: Display information about a specific file.
-- `lines`: Display the number of lines in a file.
-- `-sysinfo`: Show system information.
-- `-sysS`: Display storage capacity.
-- `-time`: Show current date and time.
-- `-del`: Delete a specified file.
+Follow these simple steps to install and start using **CA**:  
 
-## Installation
-1. Clone the repository
-2. cd into the repository folder
-3. run : chmod +x install.sh
-    or, sudo chmod +x install.sh
-4. ./install.sh
-5. start using "ca"
-
-## Note
-CA strives to simplify command line tasks, but please note that it may not always be the most efficient solution.
-
-
-
+1. Clone the repository:  
+   ```bash
+   git clone <repository_url>
