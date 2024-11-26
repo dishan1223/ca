@@ -39,3 +39,20 @@ Follow these simple steps to install and start using **CA**:
 1. Clone the repository:  
    ```bash
    git clone <repository_url>
+2. Navigate to the repository folder:
+   ```bash
+   cd ca
+3. Make the installer executable:
+   ```bash
+   chmod +x install.sh
+4. Run the installer:
+   ```bash
+   ./install.sh
+5. Start using CA:
+   ```bash
+   ca
+## 📝 Notes  
+
+- **CA** is designed to simplify your workflow but may not always be the most optimized solution for advanced users.  
+- Ideal for quick and straightforward operations on the command line.  
+- Give **CA** a try and enjoy an honest, user-friendly command line experience! 😊  
